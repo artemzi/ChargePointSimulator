@@ -52,15 +52,19 @@
     </distributionManagement>
 
     <dependencies>
-            <dependency>
+        <dependency>
             <groupId>eu.chargetime.ocpp</groupId>
             <artifactId>common</artifactId>
             <version>0.5-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/v1_6-0.5-SNAPSHOT.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>eu.chargetime.ocpp</groupId>
             <artifactId>v1_6</artifactId>
             <version>0.5-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/common-0.5-SNAPSHOT.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>eu.chargetime.simulator</groupId>
